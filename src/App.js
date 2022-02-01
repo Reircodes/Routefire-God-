@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+import { Header } from './container/index.js';
 import './App.css';
 
 function App() {
-    return ( <
-        div className = "App" >
+    return ( 
+        <div className = "App" >
+            <Header/>
 
-        <
-        /div>
+        </div>
     );
 }
 
-export default App;
+export default App

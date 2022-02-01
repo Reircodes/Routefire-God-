@@ -1,0 +1,40 @@
+.header {
+    position: relative;
+    background-color: var(--blue-color);
+}
+
+.custom-shape-divider {
+    /* position: absolute;
+    top: 0;
+    width: 100%; */
+    /* overflow: hidden;
+    line-height: 0; */
+}
+
+.custom-shape-divider svg {
+    position: relative;
+    display: block;
+    width: calc(114% + 1.3px);
+    height: 500px;
+}
+
+.shape-fill {
+    fill: #FFFFFF;
+}
+
+.header__container-content>h1 {
+    font-size: 55px;
+    letter-spacing: -2.25px;
+    font-weight: 500;
+    line-height: 67.65px;
+    color: #FFFFFF;
+    font-family: var(--font);
+}
+
+.header__container-content>p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30.4px;
+    color: var(--faded-color);
+    font-family: var(--font);
+}
