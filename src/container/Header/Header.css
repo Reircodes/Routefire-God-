@@ -14,27 +14,114 @@
 .custom-shape-divider svg {
     position: relative;
     display: block;
-    width: calc(114% + 1.3px);
-    height: 500px;
+    width: calc(100% + 1.3px);
+    height: 106px;
 }
 
 .shape-fill {
     fill: #FFFFFF;
 }
 
-.header__container-content>h1 {
-    font-size: 55px;
+.header__container--content>h1 {
+    font-size: 60px;
     letter-spacing: -2.25px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 67.65px;
     color: #FFFFFF;
     font-family: var(--font);
+    /* margin-bottom: 20px; */
 }
 
-.header__container-content>p {
+.header__container--content {}
+
+.header__container--content>p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 30.4px;
     color: var(--faded-color);
     font-family: var(--font);
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 16px !important;
+    line-height: 17px !important;
+    letter-spacing: 0.1px !important;
+    font-family: var(--font) !important;
+    font-weight: 600 !important;
+    padding: 15px 20px;
+}
+
+.btn__one {
+    background-color: var(--green-color);
+    border-radius: 5px;
+    color: var(--blue-color);
+    cursor: pointer;
+    font-family: var(--font) !important;
+    border: none;
+    padding: 15px 20px;
+}
+
+.btn__one:hover {
+    border: 2px solid var(--green-color);
+    background-color: transparent;
+    color: var(--green-color);
+    transition: all 100ms ease-in;
+}
+
+.btn__two {
+    background-color: transparent;
+    border-radius: 5px;
+    color: var(--faded-color);
+    cursor: pointer;
+    font-family: var(--font) !important;
+    border: none;
+    padding: 10px 25px 0 10px;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 100px;
+}
+
+.header__container--img>img {
+    width: 120%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .header__container--content>h1 {
+        font-size: 45px;
+        letter-spacing: -1.2px;
+        line-height: 55.35px;
+        width: 75%;
+    }
+    .header__container--content {
+        display: grid;
+        grid-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .header__container--content>h1 {
+        font-size: 35px;
+        letter-spacing: -1.2px;
+        line-height: 43.05px;
+        padding: 10px;
+    }
+    .header__container {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .header__container {
+        grid-template-columns: 100%;
+    }
+    .header__container--content__buttons {
+        margin-bottom: 20px;
+    }
+    .btn_one {
+        margin-bottom: 15px;
+    }
 }

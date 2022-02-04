@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
@@ -12,6 +12,8 @@ code {
 :root {
     --blue-color: #1A55C8;
     --green-color: #67FDCF;
-    --faded-color: #f5f5f5;
-    --font: 'Open Sans', sans-serif;
+    --faded-color: #abc4ff;
+    --font: 'Lato', sans-serif;
+    --background: #f5f5f5;
+    --text-color: #06143f;
 }
